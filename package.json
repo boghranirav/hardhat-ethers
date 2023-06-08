@@ -1,0 +1,20 @@
+{
+  "name": "deploy-contract",
+  "version": "1.0.0",
+  "description": "My first smart contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "solc": "^0.8.20"
+  }
+}
