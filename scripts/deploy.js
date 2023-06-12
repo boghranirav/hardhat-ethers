@@ -1,9 +1,12 @@
 async function main() {
-  const HelloWorld = await ethers.getContractFactory("HelloWorld");
+  const ScoreRegistry = await ethers.getContractFactory("ScoreRegistry");
 
   // Start deployment, returning a promise that resolves to a contract object
-  const hello_world = await HelloWorld.deploy("Hello World!");
-  console.log("Contract deployed to address:", hello_world.address);
+  const scoreRegistry = await ScoreRegistry.deploy();
+  await scoreRegistry.deployed();
+  // const box = await upgrades.deployProxy(ScoreRegistry, [42]);
+
+  console.log("Contract deployed to address:", scoreRegistry.address);
 }
 
 main()
